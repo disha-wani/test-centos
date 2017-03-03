@@ -31,12 +31,12 @@ public class VerifyLoginFucntionality
 	public void verifyValidLogin(String Username, String Password, String sText) throws InterruptedException
 	{
 		try{
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//src//com//uat//config//chromedriver");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//src//com//uat//config//chromium-browser-38.0.2125.104-1.el7.centos.x86_64.rpm");
 		driver = new ChromeDriver();
 		
 		//driver.get("https://click2cloud.sharepoint.com/sites/UAT/TestV2.0/");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.get("http://aspnet-core-example-uat-core-front.c2capps.click2cloud.net/");
+		driver.get("http://uatvs-frontlayer-uatvs-frontlayer1.cloudapps.click2cloud.org/");
 		
 		
 		LoginPage login = new LoginPage(driver);
